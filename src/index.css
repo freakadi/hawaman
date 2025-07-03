@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.center {
+  text-align: center;
+}
+
+/* Weather background classes */
+.bg-clear {
+  background: url('/assets/clear.jpg') no-repeat center center/cover;
+}
+
+.bg-clouds {
+  background: url('/assets/clouds.jpg') no-repeat center center/cover;
+}
+
+.bg-rain {
+  background: url('/assets/rain.jpg') no-repeat center center/cover;
+}
+
+.bg-snow {
+  background: url('/assets/snow.jpg') no-repeat center center/cover;
+}
+
+.bg-thunderstorm {
+  background: url('/assets/thunder.jpg') no-repeat center center/cover;
+}
+
+/* Spinner */
+.loader {
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #3498db;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin: auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    padding: 0.5rem;
+  }
+}
